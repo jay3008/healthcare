@@ -1,0 +1,52 @@
+.margin-6 {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.padding-4 {
+    padding-top: 4%;
+}
+/* header started */
+.nav-item {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F1534;
+    padding: 0 1rem;
+}
+
+
+.active {
+    font-weight: 700;
+}
+/* header ended */
+
+/* Virtual section started */
+.virtual-container {
+    background-image: url("images/dot-image.png");
+    background-repeat: no-repeat;
+}
+
+#health-image {
+    height: auto;
+    width: 100%;
+}
+
+.h2-heading {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #7D7987;
+}
+.btn {
+    background-color: #458FF6;
+    border-radius: 55px;
+    font-weight: 500;
+    padding: 15px 40px;
+    font-size: 18px;
+}
+/* Virtual section ended */
