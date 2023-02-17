@@ -11,6 +11,19 @@
     <title>Trafalgar</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        @media (min-width: 992px){
+            .navbar-expand-lg .navbar-nav .nav-link{ 
+            padding-right: 0%;
+            padding-left: 2.5rem;
+            }
+        }
+    
+
+        @media (max-width: 576px){
+        .container {
+            max-width: none;
+        }
+        }
         .h3-heading{
             font-size: 36px;
             font-weight: 700;
@@ -34,7 +47,7 @@
             box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
             border-radius: 20px;
             padding: 20px;
-            margin-top: 3%;
+            margin: 3%;
             background-color: #fff;
         }
         .service-title{
@@ -45,12 +58,16 @@
         .services{
             background-image: url("images/service-bg.png");
             background-repeat: no-repeat;
+            ;
             
         }
         .dot-bg{
             background-image:  url("images/service-dot-bg.png");
             background-position:center right;
             background-repeat: no-repeat;
+        }
+        .dot-bg-article{
+            background-position: top left;
         }
         .learn-more{
             display: inline-block;
@@ -110,21 +127,65 @@
             height: 10px;
             width: 10px;
             border-radius: 50%;
-            margin: 10px;
-            background-color: black;
+            margin: 0px 10px;
+            opacity: 0.5;
+            background-color: #5B9BF3;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .dot:hover{
+            opacity: 1;
+        }
+        .arrow{
+            font-size: 30px;
+            cursor: pointer;
+            color: #5B9BF3;
+            opacity: 0.5;
+            margin: 0 10px;
+            transition: all 0.5s;
+        }
+        .arrow:hover{
+            opacity: 1;
+        }
+        .page-active{
+            opacity: 1;
+        }
+        .article{
+            background-image: url("images/article-bg.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        .read-more{
+            font-size: 17px;
+            color: #4089ED;
+            font-weight: 500;
+        }
+        .footer-container{
+            background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+        }
+        .list-group-item{
+            background-color: transparent;
+            border: none;
+            padding: 0.75rem 0;
+            
+        }
+        .white-footer{
+            font-size: 18px;
+            font-weight: 300;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light margin-6">
+    <nav class="navbar navbar-expand-lg navbar-light container">
         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -139,7 +200,7 @@
                     <a class="nav-link" href="#">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link mr-0" href="#">About Us</a>
                 </li>
             </ul>
         </div>
@@ -148,18 +209,20 @@
 
     <!-- Virtual started -->
     <section class="virtual-container">
-        <div class="row align-items-center justify-content-center margin-6 padding-4">
-            <div class="col-sm-4 col-12">
-                <h2 class="h2-heading">Virtual healthcare for you</h2>
-                <p class="paragraph">Trafalgar provides progressive, and affordable
-                    healthcare, accessible on mobile and online
-                    for everyone</p>
-                <button class="btn btn-primary">
-                    Consult today
-                </button>
-            </div>
-            <div class="col-sm-4 col-12 ml-auto">
-                <img id="health-image" src="images/health-image.png" alt="health-image">
+        <div class="container">
+            <div class="row align-items-center justify-content-center padding-4">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <h2 class="h2-heading">Virtual healthcare for you</h2>
+                    <p class="paragraph">Trafalgar provides progressive, and affordable
+                        healthcare, accessible on mobile and online
+                        for everyone</p>
+                    <button class="btn btn-primary">
+                        Consult today
+                    </button>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 ml-auto">
+                    <img id="health-image" src="images/health-image.png" alt="health-image">
+                </div>
             </div>
         </div>
     </section>
@@ -168,7 +231,7 @@
     <!-- service section started -->
 
     <section class="service-container padding-4">
-        <div class="text-center"> 
+        <div class="text-center container"> 
             <h3 class="h3-heading">Our services</h3>
             <hr>
             <p class="para">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo
@@ -176,67 +239,70 @@
                 for your health</p>
         </div>
         <div class="services">
-            <div class="row margin-6 dot-bg">
-                <div class="col-sm-2 service-card">
-                    <img src="images/search-icon.png" alt="search-icon">
-                    <h3 class="service-title">Search doctor</h3>
-                    <p class="para">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
-                </div>
-                <div class="col-sm-2 offset-md-3 service-card">
-                    <img src="images/syrub-icon.png" alt="syrub-icon">
-                    <h3 class="service-title">Online pharmacy</h3>
-                    <p class="para">Buy  your medicines with our mobile application with a simple delivery system</p>
-                </div>
-                <div class="col-sm-2 offset-md-3 service-card">
-                    <img src="images/consul-icon.png" alt="consul-icon">
-                    <h3 class="service-title">Consultation</h3>
-                    <p class="para">Free consultation with our trusted doctors and get the best recomendations</p>
-                </div>
-                
-                <div class="col-sm-2 service-card">
-                    <img src="images/detail-icon.png" alt="detail-icon">
-                    <h3 class="service-title">Details info</h3>
-                    <p class="para">Free consultation with our trusted doctors and get the best recomendations</p>
-                </div>
-                <div class="col-sm-2 offset-md-3 service-card">
-                    <img src="images/kit-icon.png" alt="kit-icon">
-                    <h3 class="service-title">Emergency care</h3>
-                    <p class="para">You can get 24/7 urgent care for yourself or your children and your
-                        lovely family</p>
-                </div>
-                <div class="col-sm-2 offset-md-3 service-card">
-                    <img src="images/track-icon.png" alt="track-icon">
-                    <h3 class="service-title">Tracking</h3>
-                    <p class="para">Track and save your medical history and health data</p>
-                </div>
-                <h5 class="learn-more">Learn more</h5>
-            </div>  
-            
+            <div class="container dot-bg">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-sm-4 col-md-3  service-card">
+                        <img src="images/search-icon.png" alt="search-icon">
+                        <h3 class="service-title">Search doctor</h3>
+                        <p class="para">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3  service-card">
+                        <img src="images/syrub-icon.png" alt="syrub-icon">
+                        <h3 class="service-title">Online pharmacy</h3>
+                        <p class="para">Buy  your medicines with our mobile application with a simple delivery system</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3  service-card">
+                        <img src="images/consul-icon.png" alt="consul-icon">
+                        <h3 class="service-title">Consultation</h3>
+                        <p class="para">Free consultation with our trusted doctors and get the best recomendations</p>
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-3  service-card">
+                        <img src="images/detail-icon.png" alt="detail-icon">
+                        <h3 class="service-title">Details info</h3>
+                        <p class="para">Free consultation with our trusted doctors and get the best recomendations</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3  service-card">
+                        <img src="images/kit-icon.png" alt="kit-icon">
+                        <h3 class="service-title">Emergency care</h3>
+                        <p class="para">You can get 24/7 urgent care for yourself or your children and your
+                            lovely family</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 service-card">
+                        <img src="images/track-icon.png" alt="track-icon">
+                        <h3 class="service-title">Tracking</h3>
+                        <p class="para">Track and save your medical history and health data</p>
+                    </div>
+                    <h5 class="learn-more">Learn more</h5>
+                </div>  
+            </div>
         </div>
     </section>
     <!-- service section ended -->
 
     <!-- Leading Health section started -->
-    <section class="leading-health-container">
-        <div class="row align-items-center justify-content-center margin-6 padding-4">
-            <div class="col-sm-4 col-12 ">
-                <img id="health-image" src="images/health-image.png" alt="health-image">
-            </div>
-            <div class="col-sm-4 col-12 ml-auto">
-                <h2 class="h2-heading">Leading healthcare providers</h2>
-                <hr>
-                <p class="para">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
-                    in the solutions we deliver</p>
-                <h5 class="learn-more">Learn more</h5>
+    <section class="leading-health-container padding-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 col-sm-6 col-12 ">
+                    <img id="health-image" src="images/health-image.png" alt="health-image">
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 ml-auto">
+                    <h2 class="h2-heading">Leading healthcare providers</h2>
+                    <hr>
+                    <p class="para">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
+                        in the solutions we deliver</p>
+                    <h5 class="learn-more">Learn more</h5>
+                </div>
             </div>
         </div>
     </section>
     <!-- Leading Health section ended -->
 
     <!-- Download app section -->
-    <section>
-        <div class="row align-items-center justify-content-center margin-6 padding-4">
-            <div class="col-sm-4 col-12 ">
+    <section class="padding-4 container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4 col-sm-6 col-12 ">
                 <h2 class="h2-heading">Download our 
                     mobile apps</h2>
                 <hr>
@@ -245,7 +311,7 @@
                     or administrative hassle) and securely</p>
                 <h5 class="learn-more">Download <span>&darr;</span></h5>
             </div>
-            <div class="col-sm-4 col-12 ml-auto">
+            <div class="col-md-4 col-sm-6 col-12 ml-auto">
                 <img id="health-image" src="images/download-app-image.png" alt="health-image">
             </div>
         </div>
@@ -253,35 +319,115 @@
     <!-- Download app section ended-->
 
     <!-- customer review -->
-    <section class="review-container margin-6">
-        <div class="review">
+    <section class="review-container container padding-4">
+        <div class="review ">
             <h2 class="text-center h2-white">What our customer are saying</h2>
             <hr>
-            <div class="row align-items-center justify-content-center customer-review">
-                <img class="col-1" src="images/customer.png" alt="">
-                <div class="col-2 ">
-                    <h3>Edward Newgate</h3>
+            <div class="row align-items-center text-center justify-content-center customer-review">
+                <img class="" src="images/customer.png" alt="">
+                <div class="col-md-2 col-sm-6">
+                    <h3 class="">Edward Newgate</h3>
                     <p class="para-white">Founder Circle</p>
                 </div>
-                <div class="col-4">
-                    <p class="para-white">“Our dedicated patient engagement app and 
+                <div class="col-md-4 col-sm-6">
+                    <p class="para-white text-justify">“Our dedicated patient engagement app and 
                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
                         or administrative hassle) and securely”</p>
                 </div>
             </div>
             <img class="review-dot-bg" src="images/white-dots.png" alt="">
-            
         </div>
     </section>
+
     <div>
-        <ul class="pagination pagination-sm justify-content-center">
-            <li><a href="#"><i class="dot"></i></a></li>
-            <li><a href="#"><i class="dot"></i></a></li>
-            <li><a href="#"><i class="dot"></i></a></li>
-            <li><a href="#"><i class="dot"></i></a></li>
-            <li><a href="#"><i class="dot"></i></a></li>
+        <ul class="pagination pagination-sm justify-content-center align-items-center">
+            <li><i class="arrow">&#8592;</i></li>
+            <li><i class="dot page-active"></i></li>
+            <li><i class="dot"></i></li>
+            <li><i class="dot"></i></li>
+            <li><i class="dot"></i></li>
+            <li><i class="dot"></i></li>
+            <li><i class="arrow">&#8594;</i></li>
           </ul>
     </div>
+
+    <section class="padding-4">
+        <h2 class="h2-heading text-center">Check out our latest article</h2>
+        <hr>
+        <div class="article">
+            <div class="container dot-bg dot-bg-article">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-sm-4 col-md-3  service-card overflow-hidden">
+                        <img class="h-auto w-100" src="images/article-image1.png" alt="search-icon">
+                        <h3 class="service-title">Disease detection, check 
+                            up in the laboratory</h3>
+                        <p class="para">In this case, the role of the health laboratory is very important to do
+                            a disease detection...</p>
+                        <span class="read-more">Read more &#8594; </span>
+                    </div>
+                    <div class="col-sm-4 col-md-3  service-card overflow-hidden">
+                        <img class="h-auto w-100" src="images/article-image2.png" alt="syrub-icon">
+                        <h3 class="service-title">Herbal medicines that are 
+                            safe for consumption</h3>
+                        <p class="para">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                        <span class="read-more">Read more &#8594; </span>
+                    </div>
+                    <div class="col-sm-4 col-md-3  service-card overflow-hidden">
+                        <img class="h-auto w-100" src="images/article-image3.png" alt="consul-icon">
+                        <h3 class="service-title">Natural care for healthy 
+                            facial skin</h3>
+                        <p class="para">A healthy lifestyle should start from now and also for your skin health.
+                            There are some...</p>
+                        <span class="read-more">Read more &#8594; </span>
+                    </div>
+                    
+                    <h5 class="learn-more">View All</h5>
+                </div>  
+            </div>  
+        </div>    
+    </section>
+
+    <section class="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2>Trafalgar</h2>
+                    <p class="white-footer">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+                        for everyone</p>
+                    <p class="white-footer">©Trafalgar PTY LTD 2020. All rights reserved</p>
+                </div>
+                <div class="col-7 row">
+                    <div class="col-3">
+                        <h3>Company</h3>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item white-footer">About</li>
+                            <li class="list-group-item white-footer">Testimonials</li>
+                            <li class="list-group-item white-footer">Find a doctor</li>
+                            <li class="list-group-item white-footer">Apps</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3>Region</h3>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item white-footer">Indonesia</li>
+                            <li class="list-group-item white-footer">Singapore</li>
+                            <li class="list-group-item white-footer">Hongkong</li>
+                            <li class="list-group-item white-footer">Canada</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3>Help</h3>
+                        <ul class="list-group list-group-horizontal">
+                            <li class="list-group-item white-footer">Help center</li>
+                            <li class="list-group-item white-footer">Contact support</li>
+                            <li class="list-group-item white-footer">Instructions</li>
+                            <li class="list-group-item white-footer">How it works</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

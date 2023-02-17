@@ -4,14 +4,14 @@
 }
 
 .padding-4 {
-    padding-top: 4%;
+    padding-top: 6%;
 }
 /* header started */
 .nav-item {
     font-size: 18px;
     font-weight: 400;
     color: #1F1534;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 
@@ -30,9 +30,12 @@
     height: auto;
     width: 100%;
 }
-
-.h2-heading {
+.h2-heading{
     font-size: 48px;
+    font-weight: 700;
+}
+.h2-heading {
+    font-size: 36px;
     font-weight: 700;
 }
 
