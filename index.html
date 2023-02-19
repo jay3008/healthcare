@@ -11,180 +11,10 @@
     <title>Trafalgar</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @media (min-width: 992px){
-            .navbar-expand-lg .navbar-nav .nav-link{ 
-            padding-right: 0%;
-            padding-left: 2.5rem;
-            }
+        .gap-sm-20{
+                gap: 20px;
         }
-    
-
-        @media (max-width: 576px){
-        .container {
-            max-width: none;
-        }
-        }
-        .h3-heading{
-            font-size: 36px;
-            font-weight: 700;
-        }
-        .para{
-            font-size: 18px;
-            color: #7D7987;
-            font-weight: 300;
-        }
-        hr{
-            width: 50px;
-            border: 2px solid black;
-            border-radius: 5px;
-        }
-
-        /* .service-container{
-            background-image: url("images/service-bg.png");
-            background-repeat: no-repeat;
-        } */
-        .service-card{
-            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-            border-radius: 20px;
-            padding: 20px;
-            margin: 3%;
-            background-color: #fff;
-        }
-        .service-title{
-            font-size: 24px;
-            font-weight: 700;
-            padding: 20px 0;
-        }
-        .services{
-            background-image: url("images/service-bg.png");
-            background-repeat: no-repeat;
-            ;
-            
-        }
-        .dot-bg{
-            background-image:  url("images/service-dot-bg.png");
-            background-position:center right;
-            background-repeat: no-repeat;
-        }
-        .dot-bg-article{
-            background-position: top left;
-        }
-        .learn-more{
-            display: inline-block;
-            /* text-align: center; */
-            font-size: 18px;
-            font-weight: 500;
-            /* margin: 50px 0; */
-            margin: auto;
-            margin-top: 50px;
-            padding: 20px 50px;
-            color: #458FF6;
-            border: 1.4px solid #458FF6;
-            border-radius: 55px;
-            cursor: pointer;
-        }
-        .leading-health-container{
-            background-image: url("images/dot-image.png");
-            background-repeat: no-repeat;
-            background-position: bottom right;
-        }
-        .review{
-            background-image: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
-            /* background-repeat: no-repeat; */
-            /* background-position: auto auto, top left; */
-            border-radius: 24px;
-            margin: 0 5%;
-            padding: 50px 0;
-            color: #fff;
-            position: relative;
-            overflow: hidden;
-        }
-        .h2-white{
-            font-size: 36px;
-            font-weight: 700;
-        }
-        .para-white{
-            font-size: 19px;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 400;
-            line-height: 30px;
-        }
-        .customer-review{
-            margin-top: 5%;
-        }
-        .review-container{
-            background-image: url("images/service-dot-bg.png");
-            background-repeat: no-repeat;
-            background-position: bottom left;
-        }
-        .review-dot-bg{
-            position: absolute;
-            top: 0%;
-            right: -2%;
-        }
-        .dot{
-            display: inline-block;
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            margin: 0px 10px;
-            opacity: 0.5;
-            background-color: #5B9BF3;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
-        .dot:hover{
-            opacity: 1;
-        }
-        .arrow{
-            font-size: 30px;
-            cursor: pointer;
-            color: #5B9BF3;
-            opacity: 0.5;
-            margin: 0 10px;
-            transition: all 0.5s;
-        }
-        .arrow:hover{
-            opacity: 1;
-        }
-        .page-active{
-            opacity: 1;
-        }
-        .article{
-            background-image: url("images/article-bg.png");
-            background-repeat: no-repeat;
-            background-position: right center;
-        }
-        .read-more{
-            font-size: 17px;
-            color: #4089ED;
-            font-weight: 500;
-        }
-        .footer-container{
-            background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-        }
-        .list-group-item{
-            background-color: transparent;
-            border: none;
-            padding: 0.75rem 0;
-            
-        }
-        .white-footer{
-            font-size: 18px;
-            font-weight: 300;
-            color: #fff;
-        }
-        .footer-menu-title{
-            font-size: 24px;
-            font-weight: 500;
-            color: #fff;
-        }
-        .padding-footer{
-            padding: 5% 0;    
-        }
-        .margin-footer{
-            margin-top: 4%;
-        }
+        
     </style>
 </head>
 
@@ -231,7 +61,7 @@
                         Consult today
                     </button>
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 ml-auto">
+                <div class="col-md-4 col-sm-6 col-12 ml-auto padding-m-top">
                     <img id="health-image" src="images/health-image.png" alt="health-image">
                 </div>
             </div>
@@ -242,44 +72,44 @@
     <!-- service section started -->
 
     <section class="service-container padding-4">
-        <div class="text-center container"> 
+        <div class="text-center container padding-m-top"> 
             <h3 class="h3-heading">Our services</h3>
             <hr>
             <p class="para">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo
                 treatment with our highly qualified doctors you can consult with us which type of service is suitable
                 for your health</p>
         </div>
-        <div class="services">
+        <div class="services padding-m-top">
             <div class="container dot-bg">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-4 col-md-3  service-card">
+                    <div class="col-sm-5 col-md-3  service-card">
                         <img src="images/search-icon.png" alt="search-icon">
                         <h3 class="service-title">Search doctor</h3>
                         <p class="para">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
                     </div>
-                    <div class="col-sm-4 col-md-3  service-card">
+                    <div class="col-sm-5 col-md-3  service-card">
                         <img src="images/syrub-icon.png" alt="syrub-icon">
                         <h3 class="service-title">Online pharmacy</h3>
                         <p class="para">Buy  your medicines with our mobile application with a simple delivery system</p>
                     </div>
-                    <div class="col-sm-4 col-md-3  service-card">
+                    <div class="col-sm-5 col-md-3  service-card">
                         <img src="images/consul-icon.png" alt="consul-icon">
                         <h3 class="service-title">Consultation</h3>
                         <p class="para">Free consultation with our trusted doctors and get the best recomendations</p>
                     </div>
                     
-                    <div class="col-sm-4 col-md-3  service-card">
+                    <div class="col-sm-5 col-md-3  service-card">
                         <img src="images/detail-icon.png" alt="detail-icon">
                         <h3 class="service-title">Details info</h3>
                         <p class="para">Free consultation with our trusted doctors and get the best recomendations</p>
                     </div>
-                    <div class="col-sm-4 col-md-3  service-card">
+                    <div class="col-sm-5 col-md-3  service-card">
                         <img src="images/kit-icon.png" alt="kit-icon">
                         <h3 class="service-title">Emergency care</h3>
                         <p class="para">You can get 24/7 urgent care for yourself or your children and your
                             lovely family</p>
                     </div>
-                    <div class="col-sm-4 col-md-3 service-card">
+                    <div class="col-sm-5 col-md-3 service-card">
                         <img src="images/track-icon.png" alt="track-icon">
                         <h3 class="service-title">Tracking</h3>
                         <p class="para">Track and save your medical history and health data</p>
@@ -292,16 +122,16 @@
     <!-- service section ended -->
 
     <!-- Leading Health section started -->
-    <section class="leading-health-container padding-4">
+    <section class="leading-health-container padding-4 padding-m-top">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-md-4 col-sm-6 col-12 ">
+                <div class="col-md-4 col-sm-6 col-12  padding-m-top">
                     <img id="health-image" src="images/health-image.png" alt="health-image">
                 </div>
-                <div class="col-md-4 col-sm-6 col-12 ml-auto">
+                <div class="col-md-4 col-sm-6 col-12 ml-auto  padding-m-top">
                     <h2 class="h2-heading">Leading healthcare providers</h2>
                     <hr>
-                    <p class="para">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
+                    <p class="para padding-m-top">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
                         in the solutions we deliver</p>
                     <h5 class="learn-more">Learn more</h5>
                 </div>
@@ -311,18 +141,18 @@
     <!-- Leading Health section ended -->
 
     <!-- Download app section -->
-    <section class="padding-4 container">
+    <section class="padding-4 container padding-m-top">
         <div class="row align-items-center justify-content-center">
-            <div class="col-md-4 col-sm-6 col-12 ">
+            <div class="col-md-4 col-sm-6 col-12 padding-m-top">
                 <h2 class="h2-heading">Download our 
                     mobile apps</h2>
                 <hr>
-                <p class="para">Our dedicated patient engagement app and 
+                <p class="para padding-m-top">Our dedicated patient engagement app and 
                     web portal allow you to access information instantaneously (no tedeous form, long calls, 
                     or administrative hassle) and securely</p>
                 <h5 class="learn-more">Download <span>&darr;</span></h5>
             </div>
-            <div class="col-md-4 col-sm-6 col-12 ml-auto">
+            <div class="col-md-4 col-sm-6 col-12 ml-auto padding-m-top">
                 <img id="health-image" src="images/download-app-image.png" alt="health-image">
             </div>
         </div>
@@ -330,18 +160,18 @@
     <!-- Download app section ended-->
 
     <!-- customer review -->
-    <section class="review-container container padding-4">
-        <div class="review ">
+    <section class="review-container container padding-4 padding-m-top">
+        <div class="review">
             <h2 class="text-center h2-white">What our customer are saying</h2>
             <hr>
-            <div class="row align-items-center text-center justify-content-center customer-review">
+            <div class="row align-items-center text-center justify-content-center customer-review gap-sm-20 padding-m-top">
                 <img class="" src="images/customer.png" alt="">
                 <div class="col-md-2 col-sm-6">
                     <h3 class="">Edward Newgate</h3>
                     <p class="para-white">Founder Circle</p>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <p class="para-white text-justify">“Our dedicated patient engagement app and 
+                    <p class="para-white text-justify padding-m-3">“Our dedicated patient engagement app and 
                         web portal allow you to access information instantaneously (no tedeous form, long calls, 
                         or administrative hassle) and securely”</p>
                 </div>
@@ -361,14 +191,16 @@
             <li><i class="arrow">&#8594;</i></li>
           </ul>
     </div>
+    <!-- customer review ended -->
 
-    <section class="padding-4">
+    <!-- Article section started -->
+    <section class="padding-4 padding-m-top">
         <h2 class="h2-heading text-center">Check out our latest article</h2>
         <hr>
         <div class="article">
             <div class="container dot-bg dot-bg-article">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-4 col-md-3  service-card overflow-hidden">
+                    <div class="col-10 col-sm-10 col-md-3  service-card overflow-hidden">
                         <img class="h-auto w-100" src="images/article-image1.png" alt="search-icon">
                         <h3 class="service-title">Disease detection, check 
                             up in the laboratory</h3>
@@ -376,14 +208,14 @@
                             a disease detection...</p>
                         <span class="read-more">Read more &#8594; </span>
                     </div>
-                    <div class="col-sm-4 col-md-3  service-card overflow-hidden">
+                    <div class="col-10 col-sm-10 col-md-3  service-card overflow-hidden">
                         <img class="h-auto w-100" src="images/article-image2.png" alt="syrub-icon">
                         <h3 class="service-title">Herbal medicines that are 
                             safe for consumption</h3>
                         <p class="para">Herbal medicine is very widely used at this time because of its very good for your health...</p>
                         <span class="read-more">Read more &#8594; </span>
                     </div>
-                    <div class="col-sm-4 col-md-3  service-card overflow-hidden">
+                    <div class="col-10 col-sm-10 col-md-3  service-card overflow-hidden">
                         <img class="h-auto w-100" src="images/article-image3.png" alt="consul-icon">
                         <h3 class="service-title">Natural care for healthy 
                             facial skin</h3>
@@ -397,42 +229,43 @@
             </div>  
         </div>    
     </section>
+    <!-- Article section ended -->
 
     <section class="footer-container padding-footer margin-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-5">
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-md-6 col-sm-12 col-12 center-text">
                     <h2 class="footer-menu-title">Trafalgar</h2>
                     <p class="white-footer margin-footer">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
                         for everyone</p>
                     <p class="white-footer margin-footer">©Trafalgar PTY LTD 2020. All rights reserved</p>
                 </div>
-                <div class="col-7 row">
-                    <div class="col-3 ml-auto">
+                <div class="col-md-6 col-sm-12 col-12 row order-1">
+                    <div class="col-sm-3 col-12 align-self-center ml-auto">
                         <h3 class="footer-menu-title">Company</h3>
                         <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item white-footer">About</li>
-                            <li class="list-group-item white-footer">Testimonials</li>
-                            <li class="list-group-item white-footer">Find a doctor</li>
-                            <li class="list-group-item white-footer">Apps</li>
+                            <li class="list-group-item"><a class="white-footer" href="#">About</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#">Testimonials</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#">Find a doctor</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#">Apps</a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3 col-12 ml-auto center-text">
                         <h3 class="footer-menu-title">Region</h3>
                         <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item white-footer">Indonesia</li>
-                            <li class="list-group-item white-footer">Singapore</li>
-                            <li class="list-group-item white-footer">Hongkong</li>
-                            <li class="list-group-item white-footer">Canada</li>
+                            <li class="list-group-item"><a class="white-footer" href="#"> Indonesia</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#"> Singapore</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#"> Hongkong</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#"> Canada</a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-3 col-12 ml-auto right-text">
                         <h3 class="footer-menu-title">Help</h3>
                         <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item white-footer">Help center</li>
-                            <li class="list-group-item white-footer">Contact support</li>
-                            <li class="list-group-item white-footer">Instructions</li>
-                            <li class="list-group-item white-footer">How it works</li>
+                            <li class="list-group-item"><a class="white-footer" href="#">Help center</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#">Contact support</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#">Instructions</a></li>
+                            <li class="list-group-item"><a class="white-footer" href="#">How it works</a></li>
                         </ul>
                     </div>
                 </div>
